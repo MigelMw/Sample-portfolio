@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* LTree.html beginning */
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./Images/pexels-steve-johnson-858076.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    transition: 0.7s;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card:hover{
+    height: 420px;
+    box-shadow: 0 0 10px #fff,
+        inset 0 0 10px #fff;
+}
+
+.card p{
+    margin-top: 100px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.card p:hover{
+    letter-spacing: 8px;
+}
+
+.profileImg{
+    position: absolute;
+    transform: translateY(-90px);
+    background-image: url(./Images/pexels-yogendra-singh-3748221.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    border: 3px solid #fff;
+    transition: 0.8s;
+}
+
+.profileImg:hover{
+    box-shadow:  0 0 10px #fff,
+        inset 0 0 10px #fff;
+    transform: scale(130%) translateY(-90px);
+}
+
+.cardLinks{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.7s;
+}
+
+
+.card:hover .cardLinks{
+    margin-top: 0;
+}
+.link{
+    margin-top: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 40px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 34px;
+    border: 2px solid #fff;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.link:hover{
+    box-shadow:  0 0 10px #fff,
+        inset 0 0 10px #fff;
+    letter-spacing: 3px;
+    background: #fff;
+    color: #000;
+}
+/*LTree.html end */
+/* Home.html beginning */
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Images/pexels-vecislavas-popa-1571458.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    background-color: rgba(0, 0, 0, 0.574);
+    color: #fff;
+}
+
+nav>ul>li
+a{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+nav>ul>li>a:hover{
+    transform: scale(110%);
+}
+
+.logo{
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.logo:hover{
+    letter-spacing: 5px;
+}
+
+.header-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 25px;
+}
+
+.header-box>h3{
+    cursor: pointer;
+    transition: 1s;
+}
+
+.header-box>h3:hover{
+    font-size: 50px;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    height: 200px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.skills>p{
+    padding: 15px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.skills>p:hover{
+    border: 2px solid #fff;
+}
+
+.majorProject{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./Images/pexels-pixabay-37347.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.majorProject>h3{
+    margin-top: 50px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    transition: 1s;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.574);
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+
+.majorProject>h3:hover{
+    letter-spacing: 15px;
+}
+
+.projectBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    height: 600px;
+    width: 100%;
+    color: #fff;
+}
+
+.project-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 80%;
+    width: 30%;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.574);
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.project-content>h5{
+    padding: 50px 0 0 10px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.project-content:hover{
+    background-color: rgba(0, 0, 0, 0.87);
+    transform: scale(110%);
+}
+
+.projectBox>p{
+    text-align: center;
+    width: 80%;
+}
+
+.project-content>button{
+    height: 30px;
+    width: 100px;
+    background: transparent;
+    border: 2px solid #fff;
+    padding:5px;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.projectBox>button:hover{
+    color: #000;
+    background: #fff;
+}
+
+footer{
+    height: 180px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.center-logo{
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 1s;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+
+.center-logo:hover{
+    transform: scale(110%);
+}
+
+.left>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding-left: 20px;
+    border-left:2px solid #fff;
+}
+
+.left>ul>li>a{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+.left>ul>li>a:hover{
+    transform: scale(110%);
+}
